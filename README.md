@@ -11,3 +11,14 @@
 
 ### Abstract
 ##### Synthetic data generation is emerging as a dominant solution for personalized medicine as it enables to address critical challenges such as yielding the data volumes needed to deliver accurate results and complying with increasingly restrictive privacy regulations, both demanded in paediatric cancer research. Here we introduce an exaplainable VAE for synthetic data generation for medulloblastoma, a childhood brain tumor. Our model can be used to augment and interpolate available data with synthetic instances, which are automatically annotated with confidence scores to assess the reliability of augmented data points and interpolated paths. The model is transparent as it is able to match the learned latent variables with distinct gene expression patterns. We leverage both the synthetic data generation ability and explainability features of our model to study the unknown relationship between G3 and G4 subgroups of medulloblastoma and identify an intermediate subgroup with a specific gene signature.
+
+
+## Setup
+In order to reproduce the results indicated in the paper simply setup an
+environment using the provided `environment.yaml` and `conda` and run the experiments
+using the provided makefile:
+
+```bash
+conda env create --file environment.yaml
+source activate ENV_NAME
+```
